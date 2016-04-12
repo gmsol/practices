@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bootstrap Nav</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<style type="text/css">
+/*start of styles for top navigation*/
+.topNav {
+   font-size: 18px;
+   background-color:white;
+   border-bottom:none;
+}
+
+.navbar-default {
+	background:white;
+	box-shadow: 0 0 0 white;/*remove navbar bottom shadow*/
+}
+
+.navbar-header a.navbar-brand {
+	 background-color:white;
+	
+ }
+
+#navCollapse ul li a  {
+
+	background-color:white;
+	
+}
+
+button.navbar-toggle {
+	border:none;
+	background:white;
+}
+
+/*start media query for small devices*/
+
+ @media only screen  and (min-device-width : 320px) and (max-width: 767px) {
+.navbar-header a.navbar-brand {
+       font-size:24px;
+	   font-family:"Comic Sans MS", cursive;
+ }
+
+div#navCollapse {
+	border-top:none;/*remove top border when click hamburger btn*/	
+	background:url(../img/laptop.jpg);
+	background-size:cover;
+
+}
+#navCollapse ul li a  {
+     background:rgba(255,255,255,0.5);
+	
+}
+}
+</style>
+</head>
+
+<body>
+<!-- top navigation  -->
+<nav class="navbar navbar-default navbar-fixed-top topNav" role="navigation">
+  <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>  
+              <a class="navbar-brand"  target="_blank">Gil Manlugon Sol</a>          
+          </div>
+  
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          
+          <div class="collapse navbar-collapse" id="navCollapse">            
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>     
+              </ul>           
+          </div><!-- .navbar-collapse-->
+           
+  </div><!--container-->
+</nav>
+</body>
+</html>
